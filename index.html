@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced CSS & JS Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="light">
+    <div class="container">
+      <h1>User Preferences</h1>
+
+      <div class="preference-form">
+        <label for="theme">Theme:</label>
+        <select id="theme">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+
+        <label for="font-size">Font Size (px):</label>
+        <input type="number" id="font-size" min="12" max="24" value="16" />
+
+        <button id="save-btn" class="btn">Save Preferences</button>
+      </div>
+
+      <div id="confirmation" class="fade-in">Preferences saved!</div>
+
+      <div class="animation-section">
+        <h2>Animation Control</h2>
+        <button id="animate-btn" class="btn">Toggle Image Animation</button>
+        <img id="animated-image" src="demo-image.jpg" alt="Demo Image" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
